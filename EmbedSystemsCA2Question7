@@ -1,0 +1,21 @@
+#include "mbed.h"
+
+DigitalOut led1(LED1);
+DigitalOut led2(LED2);
+Ticker ticker_led1;
+Ticker ticker_led2;
+void toggle_led1() {
+led1 = !led1;
+}
+
+void_led2() {
+led2 = !led2;
+}
+
+int main() {
+led1 = 0;
+led2 = 0;
+
+ticker_led1.attach(&toggle_led1, 2.0);
+ticker_led2.attach(&toggle_led2, 5.0);
+}
