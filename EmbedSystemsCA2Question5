@@ -1,0 +1,9 @@
+# include "mbed.h"
+Serial pc(USBTX, USBRX);
+InterruptIn button(USER_BUTTON);
+button_press_count = 0;
+void button_pressed() {
+button_press_count++;
+pc.printf(button_press_count);}
+int main(){
+button.rise(&button_pressed);
