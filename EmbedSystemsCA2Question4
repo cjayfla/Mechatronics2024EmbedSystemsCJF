@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+//Part 1 Initialise variables
+int a = 10;
+int b = 20;
+int c = 30;
+//Part 2 add a and b as b and print
+int d = a + b;
+printf(d);
+//Part 3 subtract c from d as e and print
+e = d - c;
+printf(e);
+return 0; }
